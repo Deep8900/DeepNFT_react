@@ -102,7 +102,7 @@ export const Creator = () => {
           {creatorData.map((card) => (
             <div
               key={card.id}
-              className="flex flex-col rounded-[20px] p-[10px] bg-clip-padding backdrop-filter backdrop-blur-sm border-gray-100 hover:shadow-black/70 hover:shadow-2xl [ bg-gradient-to-bl from-gray-600 to-black/40 ] shine"
+              className="flex flex-col rounded-[20px] p-[10px] bg-clip-padding backdrop-filter backdrop-blur-sm border-gray-100 hover:shadow-black/70 hover:shadow-2xl bg-gr2 shine"
             >
               <div className="absolute top-[10px] left-0[10px] bg-white/50 font-bold text-black leading-none p-[5px] rounded-full min-w-[28px] flex justify-between items-center">
                 <span className="mx-auto">{card.id}</span>

@@ -103,7 +103,7 @@ code {
     font-size: 15px !important;
   }
   .categories_grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr 1fr !important;
     gap: 20px !important;
   }
 }

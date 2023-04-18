@@ -58,11 +58,11 @@ export const Categories = () => {
           {categoryData.map((card) => (
             <div
               key={card.id}
-              className="flex flex-col rounded-[25px] bg-clip-padding backdrop-filter backdrop-blur-sm border-gray-100 hover:shadow-black/70 hover:shadow-2xl [ bg-gradient-to-bl from-gray-600 to-black/40 ] shine"
+              className="flex flex-col rounded-[25px] bg-clip-padding backdrop-filter backdrop-blur-sm border-gray-100 hover:shadow-black/70 hover:shadow-2xl bg-gr2 shine"
             >
               <img src={card.imgUrl} alt={card.title} />
               <div className="px-[15px] py-[7px] text-center">
-                <p className="font-cursive">{card.title}</p>
+                <p className="font-cursive">{card.title}</p> 
               </div>
             </div>
           ))}

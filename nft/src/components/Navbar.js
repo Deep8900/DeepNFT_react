@@ -10,7 +10,7 @@ export const Navbar = () => {
   }
 
   return (
-    <nav className="[ bg-gradient-to-r from-black/90 to-black/75 ] text-white h-[80px] mobile_menu">
+    <nav className="bg-gr1 text-white h-[80px] mobile_menu">
       <ul className="flex justify-between items-center w-[100%] sm:px-[50px] px-[20px] py-[15px] mobile_menu_ul">
         <div>
           <li>

@@ -31,7 +31,10 @@ module.exports = {
       'max3': {'max': '1024px'},
     },
     backgroundImage: {
-      'hero-timer': "url('/img/Home_image_2.png')",
+      'hero_timer': "url('/public/img/Home_image_2.png')",
+      'gr1': 'linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.75))',
+      'gr2': 'linear-gradient(to bottom left, rgba(128,128,128,0.6), rgba(0, 0, 0, 0.4))',
+      'gr3': 'linear-gradient(to top, rgba(160,32,240,0.6), rgba(160,32,240,0.1))',
     },
   },
   plugins: [],

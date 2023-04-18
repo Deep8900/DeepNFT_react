@@ -51,7 +51,7 @@ export const Collection = () => {
           {cardsData.map((card) => (
             <div
               key={card.id}
-              className="flex flex-col gap-[15px] rounded-[25px] p-[10px] bg-clip-padding backdrop-filter backdrop-blur-sm border-gray-100 hover:shadow-black/70 hover:shadow-2xl [ bg-gradient-to-bl from-gray-600 to-black/40 ] shine"
+              className="flex flex-col gap-[15px] rounded-[25px] p-[10px] bg-clip-padding backdrop-filter backdrop-blur-sm border-gray-100 hover:shadow-black/70 hover:shadow-2xl bg-gr2 shine"
             >
               <img src={card.imageUrl1} alt={card.title} />
               <div className="flex gap-[10px] justify-between">
