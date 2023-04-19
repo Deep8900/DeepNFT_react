@@ -28,6 +28,7 @@ code {
   overflow: hidden;
 }
 
+
 .shine {
   position: relative;
   overflow: hidden;
@@ -51,6 +52,10 @@ code {
   -webkit-animation: shine 0.85s;
           animation: shine 0.85s;
 }
+.shine-1:hover::before, .shine-1:focus::before {
+  -webkit-animation: shine 1.50s !important;
+          animation: shine 1.50s !important;
+}
 @-webkit-keyframes shine {
   100% {
     left: 125%;
@@ -64,6 +69,19 @@ code {
 
 
               /* Responsive */
+
+@media screen and (min-width: 800px) {
+  .ranking_id{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    display: flex;
+    border-radius: 999px;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+  }
+}
 @media screen and (max-width: 800px) {
   .mobile_menu{
     height: auto;
@@ -87,7 +105,7 @@ code {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   .home_h1{
     font-size: 35px !important;
   }
@@ -105,6 +123,16 @@ code {
   .categories_grid {
     grid-template-columns: 1fr 1fr !important;
     gap: 20px !important;
+  }
+  .setup_grid{
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .ranking_grid{
+    grid-template-columns: 1fr 9fr 3fr !important;
+  }
+  .market_grid{
+    grid-template-columns: 1fr !important;
   }
 }
 
@@ -169,9 +197,9 @@ code {
 
 .gradient-05 {
   background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0) 100%
+    135deg,
+    rgb(255 255 255 / 20%) 0%,
+    rgb(0 0 0 / 30%) 100%
   );
 }
 
@@ -179,8 +207,6 @@ code {
   position: absolute;
   width: 200px;
   height: 316px;
-  left: 0px;
-  top: 0px;
   background: #8d39a3;
   filter: blur(175px);
 }
@@ -189,8 +215,6 @@ code {
   position: absolute;
   width: 500px;
   height: 100px;
-  left: 37%;
-  bottom: 0;
   background: #65c4fa;
   filter: blur(150px);
 }

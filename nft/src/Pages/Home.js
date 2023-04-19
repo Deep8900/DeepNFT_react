@@ -5,9 +5,10 @@ import { Hero } from "../components/Hero";
 import { Collection } from "../components/Collection";
 import { Creator } from "../components/Creator";
 import { Categories } from "../components/Categories";
-// import { Setup } from "../components/Setup";
+import { Setup } from "../components/Setup";
 import { Timer } from "../components/Timer";
-
+import { NewsLetter } from "../components/NewsLetter";
+import { Footer } from "../components/Footer";
 
 export const Home = () => {
   return (
@@ -40,10 +41,18 @@ export const Home = () => {
         <Timer />
       </section>
 
-      {/* How it Works
+      {/* How it Works */}
       <section className="bg-gr1 py-[80px] max1:py-[60px] px-[50px] max1:px-[25px] w-[100%] h-[100%]">
         <Setup />
-      </section> */}
+      </section>
+
+      {/* Newsletter */}
+      <section className="bg-gr1 py-[80px] max1:py-[60px] px-[50px] max1:px-[25px] w-[100%] h-[100%]">
+        <NewsLetter />
+      </section>
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 };
