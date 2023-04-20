@@ -39,6 +39,7 @@ module.exports = {
       'gr2': 'linear-gradient(to bottom left, rgba(128,128,128,0.6), rgba(0, 0, 0, 0.4))',
       'gr3': 'linear-gradient(to top, rgba(160,32,240,0.6), rgba(160,32,240,0.1))',
       'gr4': 'linear-gradient(to right, rgba(10,10,10,0.9), rgba(10,10,10,0.75))',
+      'gr5': 'linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%)',
     },
   },
   plugins: [],

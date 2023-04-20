@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../index.css";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
 export const Signup = () => {
+
+  // to scroll to top
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  }, [])
+
+
   return (
     <>
       {/* Navbar */}

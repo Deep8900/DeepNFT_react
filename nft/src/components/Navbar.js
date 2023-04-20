@@ -32,7 +32,7 @@ export const Navbar = () => {
           <li className="hover:border-b w-fit md:hidden text-[#A259FF]">
             <Link to="/signup">Signup</Link>
           </li>
-          <Link to="/signup" className="flex gap-2 px-[15px] py-[8px] bg-[#A259FF] hover:bg-[#a665f9] rounded-[10px] items-center justify-center max2:hidden">
+          <Link to="/signup" className="flex gap-2 px-[15px] py-[8px] bg-[#A259FF] hover:bg-[#a665f9] rounded-[10px] items-center justify-center max2:hidden shadow-lg shadow-indigo-500/50">
             <img src="/img/svg/user.svg" alt="user" className="h-[18px]"/>
             <span>Sign Up</span>
           </Link>

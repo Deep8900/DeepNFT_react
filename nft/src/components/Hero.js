@@ -1,10 +1,12 @@
 import React, { useRef, useEffect } from "react";
-import '../index.css';
+import "../index.css";
 import { Tilt } from "react-tilt";
 import { Link } from "react-router-dom";
 import VanillaTilt from "vanilla-tilt";
+import { ScrolltoTop } from "./ScrolltoTop";
 
 export const Hero = () => {
+
   const tiltRef = useRef(null);
   useEffect(() => {
     VanillaTilt.init(tiltRef.current, {
@@ -16,6 +18,7 @@ export const Hero = () => {
       easing: "cubic-bezier(3.9,.98,.52,.99)",
     });
   }, []);
+
 
   return (
     <>
@@ -34,7 +37,7 @@ export const Hero = () => {
             </p>
             <Link
               to="/marketplace"
-              className="flex gap-2 bg-[#A259FF] hover:bg-[#a665f9] rounded-[10px] w-fit px-[15px] py-[8px] items-center max1:hidden"
+              className="flex gap-2 bg-[#A259FF] hover:bg-[#a665f9] rounded-[10px] w-fit px-[15px] py-[8px] items-center max1:hidden shadow-lg shadow-indigo-500/50"
             >
               <img
                 src="/img/svg/Rocket.svg"
@@ -86,7 +89,7 @@ export const Hero = () => {
         <div className="flex justify-center items-center flex-col sm:hidden">
           <Link
             to="/marketplace"
-            className="flex gap-2 bg-[#A259FF] hover:bg-[#a665f9] rounded-[10px] w-[85%] px-[15px] py-[8px] items-center justify-center mt-[20px]"
+            className="flex gap-2 bg-[#A259FF] hover:bg-[#a665f9] rounded-[10px] w-[85%] px-[15px] py-[8px] items-center justify-center mt-[20px] shadow-lg shadow-indigo-500/50"
           >
             <img src="/img/svg/Rocket.svg" alt="Rocket" className="h-[17px]" />
             <span className="">Get Started</span>
@@ -106,8 +109,10 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-
       </div>
+
+      {/*  scroll to top */}
+      <ScrolltoTop />
     </>
   );
 };

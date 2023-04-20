@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../index.css";
 import { Navbar } from "../components/Navbar";
 import { Hero } from "../components/Hero";
@@ -11,6 +11,17 @@ import { NewsLetter } from "../components/NewsLetter";
 import { Footer } from "../components/Footer";
 
 export const Home = () => {
+
+  // to scroll to top
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  }, [])
+
+
   return (
     <>
       {/* Navbar */}

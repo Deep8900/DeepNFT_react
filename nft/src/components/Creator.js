@@ -92,7 +92,7 @@ export const Creator = () => {
             </p>
           </div>
           <Link to="/Rankings" className="max1:hidden">
-            <button className="px-[15px] py-[10px] border-[2px] border-[#A259FF] rounded-[15px] text-[#A259FF] font-bold flex justify-center items-center gap-[10px]">
+            <button className="px-[15px] py-[10px] border-[2px] border-[#A259FF] rounded-[15px] text-[#A259FF] font-bold flex justify-center items-center gap-[10px] shadow-lg shadow-indigo-500/50">
               <img src="/img/svg/Rocket2.svg" alt="Rocket" />
               <span>View Rankings</span>
             </button>
@@ -127,7 +127,7 @@ export const Creator = () => {
           ))}
         </div>
         <Link to="/Rankings" className="sm:hidden w-[100%]">
-          <button className="px-[15px] py-[10px] border-[2px] border-[#A259FF] rounded-[15px] text-[#A259FF] font-bold w-[100%] mt-[30px] flex justify-center items-center gap-[15px]">
+          <button className="px-[15px] py-[10px] border-[2px] border-[#A259FF] rounded-[15px] text-[#A259FF] font-bold w-[100%] mt-[30px] flex justify-center items-center gap-[15px] shadow-lg shadow-indigo-500/50">
             <img src="/img/svg/Rocket2.svg" alt="Rocket" />
             <span>View Rankings</span>
           </button>

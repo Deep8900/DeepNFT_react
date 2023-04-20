@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../index.css";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
 export const Wallet = () => {
+
+  // to scroll to top
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  }, [])
+
+  
   return (
     <>
       {/* Navbar */}
@@ -16,11 +27,15 @@ export const Wallet = () => {
               src="/img/wallet_image.png"
               alt="spaceship"
               className="h-[100%] max2:hidden object-cover"
+              loading="lazy"
+              lazy="true"
             />
             <img
               src="/img/wallet_image2.png"
               alt="spaceship"
               className="h-[100%] md:hidden w-[100%] object-cover"
+              loading="lazy"
+              lazy="true"
             />
           </div>
 

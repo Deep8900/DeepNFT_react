@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../index.css";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import { ScrolltoTop } from "../components/ScrolltoTop";
+
 
 const rankingData = [
   {
@@ -167,6 +169,17 @@ const rankingData = [
 ];
 
 export const Rankings = () => {
+
+  // to scroll to top
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  }, [])
+
+
   return (
     <>
       {/* Navbar */}
@@ -221,6 +234,11 @@ export const Rankings = () => {
           </div>
         </div>
       </section>
+
+      {/* scroll to Top */}
+      <div className="sm:hidden">
+        <ScrolltoTop />
+      </div>
 
       {/* Footer */}
       <Footer />

@@ -13,8 +13,13 @@ export const Timer = () => {
               <img src="/img/Avatar-7.png" alt="Avatar" className="h-[50px]" />
               <span className="text-[22px]">Shroomie</span>
             </div>
-            <p className="text-[50px] max1:text-[36px] font-mono">Magic Mashrooms</p>
-            <Link className="flex gap-[20px] px-[20px] py-[12px] bg-white w-fit rounded-[20px] max1:hidden max1:w-fit">
+            <p className="text-[50px] max1:text-[36px] font-mono">
+              Magic Mashrooms
+            </p>
+            <Link
+              to="/marketplace"
+              className="flex gap-[20px] px-[20px] py-[12px] bg-white w-fit rounded-[20px] max1:hidden max1:w-fit"
+            >
               <img src="/img/svg/eye.svg" alt="eye" />
               <span className="text-black">See NFT</span>
             </Link>
@@ -40,7 +45,10 @@ export const Timer = () => {
               </div>
             </div>
           </div>
-          <Link className="flex justify-center gap-[20px] px-[20px] py-[12px] bg-white w-[100%] rounded-[15px] sm:hidden mt-[60px]">
+          <Link
+            to="/marketplace"
+            className="flex justify-center gap-[20px] px-[20px] py-[12px] bg-white w-[100%] rounded-[15px] sm:hidden mt-[60px]"
+          >
             <img src="/img/svg/eye.svg" alt="eye" />
             <span className="text-black font-bold">See NFT</span>
           </Link>
