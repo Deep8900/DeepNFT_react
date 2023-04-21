@@ -112,6 +112,7 @@ export const Creator = () => {
                   src={card.imageUrl1}
                   alt={card.name}
                   className="w-[70%] mb-[20px] max3:mb-0 max3:w-[30%]"
+                  loading="lazy"
                 />
                 <div className="flex flex-col items-center max3:items-start">
                   <h3 className="text-[25px] max1:text-[22px] mb-[10px] font-bold font-mono">

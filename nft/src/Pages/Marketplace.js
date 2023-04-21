@@ -252,16 +252,32 @@ const marketData = [
 ];
 
 
-
 export const Marketplace = () => {
 
   // search functionality
   const [searchQuery, setSearchQuery] = useState("");
-
   const filteredData = marketData.filter((card) =>
     card.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
     card.name2.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+
+  // pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 12;
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+  const pageNumbers = [];
+  for (let i = 1; i <= Math.ceil(filteredData.length / itemsPerPage); i++) {
+    pageNumbers.push(i);
+  }
+
 
   // search bar open when we click on search icon
   const searchInputRef = useRef(null);
@@ -278,7 +294,7 @@ export const Marketplace = () => {
       left: 0,
       behavior: "smooth"
     })
-  }, [])
+  }, [currentPage])
 
 
   return (
@@ -318,12 +334,12 @@ export const Marketplace = () => {
             {filteredData && filteredData.length ? (
               <div>
                 <div className="grid grid-cols-gd3 max3:grid-cols-gd1 gap-[40px] max3:gap-[30px] market_grid">
-                  {filteredData.map((card) => (
+                  {currentItems.map((card) => (
                     <div
                       key={card.id}
                       className="flex flex-col rounded-[25px] hover:shadow-2xl bg-gr2 shine"
                     >
-                      <img src={card.imageUrl1} alt={card.title} />
+                      <img src={card.imageUrl1} alt={card.title} loading="lazy"/>
                       <div className="px-[20px] py-[15px] flex flex-col gap-[15px]">
                         <p className="font-cursive text-[20px]">{card.name}</p>
                         <div className="flex gap-[15px] items-center">
@@ -331,6 +347,7 @@ export const Marketplace = () => {
                             src={card.img2}
                             alt={card.name2}
                             className="h-[35px]"
+                            loading="lazy"
                           />
                           <span className="font-mono text-[16px] opacity-80">
                             {card.name2}
@@ -349,6 +366,21 @@ export const Marketplace = () => {
                       </div>
                     </div>
                   ))}
+                </div>
+                <div className="flex justify-center mt-[50px]">
+                  <div className="pagi_con flex gap-[5px] rounded-[8px]">
+                  {pageNumbers.map((pageNumber) => (
+                    <button
+                      key={pageNumber}
+                      onClick={() => handlePageChange(pageNumber)}
+                      className={`px-4 py-3 rounded-[8px] pagi_btn leading-tight hover:bg-gray-800 ${
+                        currentPage === pageNumber ? "z-10 px-4 py-3  bg-gray-800 text-white/40" : "bg-gray-700 text-white/80 pagi_btn_notactive"
+                      }`}
+                    >
+                      {pageNumber}
+                    </button>
+                  ))}
+                  </div>
                 </div>
               </div>
             ) : (

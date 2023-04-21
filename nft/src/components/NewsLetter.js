@@ -7,7 +7,7 @@ export const NewsLetter = () => {
       <div className="text-white max-w-[1440px] mx-auto w-[100%] relative isolate bg-[#3B3B3B] px-[50px] max3:px-[25px] py-[50px] max3:py-[25px] rounded-[25px]">
         <div className="grid grid-cols-gd1 max1:grid-cols-gd2 gap-[80px] max3:gap-[30px]">
           <div>
-            <img src="/img/email_image.png" alt="Astronaut" />
+            <img src="/img/email_image.png" alt="Astronaut" loading="lazy"/>
           </div>
 
           <div className="flex flex-col justify-start items-start gap-[20px] max-w-[500px]">

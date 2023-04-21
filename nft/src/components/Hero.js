@@ -43,6 +43,7 @@ export const Hero = () => {
                 src="/img/svg/Rocket.svg"
                 alt="Rocket"
                 className="h-[17px]"
+                fetchpriority="high"
               />
               <span className="">Get Started</span>
             </Link>

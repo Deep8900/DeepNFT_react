@@ -41,7 +41,7 @@ export const Setup = () => {
               key={card.id}
               className="flex flex-col rounded-[25px] bg-clip-padding backdrop-filter backdrop-blur-sm border-gray-100 hover:shadow-black/70 hover:shadow-2xl bg-gr2 shine px-[10px] py-[20px]"
             >
-              <img src={card.imgUrl} alt={card.title} />
+              <img src={card.imgUrl} alt={card.title} loading="lazy" />
               <div className="px-[15px] py-[7px] text-center">
                 <h3 className="text-[25px] font-mono mb-[10px]">{card.title}</h3>
                 <p className="font-cursive opacity-70">{card.desc}</p>

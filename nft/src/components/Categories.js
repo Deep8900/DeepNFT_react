@@ -60,7 +60,7 @@ export const Categories = () => {
               key={card.id}
               className="flex flex-col rounded-[25px] bg-clip-padding backdrop-filter backdrop-blur-sm border-gray-100 hover:shadow-black/70 hover:shadow-2xl bg-gr2 shine"
             >
-              <img src={card.imgUrl} alt={card.title} />
+              <img src={card.imgUrl} alt={card.title} loading="lazy"/>
               <div className="px-[15px] py-[7px] text-center">
                 <p className="font-cursive">{card.title}</p> 
               </div>

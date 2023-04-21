@@ -23,8 +23,8 @@ export const Signup = () => {
       <section className="bg-gr1 w-[100%] h-[100%] md:h-[calc(100vh-80px)]">
         <div className="grid grid-cols-gd5 max2:grid-cols-gd2">
           <div className="md:h-[calc(100vh-80px)]">
-            <img src="/img/signup_image.png" alt="spaceship" className="h-[100%] max2:hidden object-cover"/>
-            <img src="/img/signup_image2.png" alt="spaceship" className="h-[100%] md:hidden w-[100%] object-cover"/>
+            <img src="/img/signup_image.png" alt="spaceship" className="h-[100%] max2:hidden object-cover" loading="lazy"/>
+            <img src="/img/signup_image2.png" alt="spaceship" className="h-[100%] md:hidden w-[100%] object-cover" loading="lazy"/>
           </div>
 
           <div className="flex flex-col justify-center font-mono text-white px-[40px] max1:px-[25px] py-[40px] max1:py-[25px] gap-[30px] max1:gap-[15px]">

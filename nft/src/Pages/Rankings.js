@@ -220,6 +220,7 @@ export const Rankings = () => {
                       src={card.imageUrl1}
                       alt={card.name}
                       className="h-[45px]"
+                      loading="lazy"
                     />
                     <span className="max1:text-[15px] opacity-80">
                       {card.name}

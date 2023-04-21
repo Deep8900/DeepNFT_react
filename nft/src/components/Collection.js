@@ -53,22 +53,25 @@ export const Collection = () => {
               key={card.id}
               className="flex flex-col gap-[15px] rounded-[25px] p-[10px] bg-clip-padding backdrop-filter backdrop-blur-sm border-gray-100 hover:shadow-black/70 hover:shadow-2xl bg-gr2 shine"
             >
-              <img src={card.imageUrl1} alt={card.title} />
+              <img src={card.imageUrl1} alt={card.title} fetchpriority="high"/>
               <div className="flex gap-[10px] justify-between">
                 <img
                   src={card.imageUrl2}
                   alt={card.title}
                   className="w-[30%]"
+                  fetchpriority="high"
                 />
                 <img
                   src={card.imageUrl3}
                   alt={card.title}
                   className="w-[30%]"
+                  fetchpriority="high"
                 />
                 <img
                   src={card.imageUrl4}
                   alt={card.title}
                   className="w-[30%]"
+                  fetchpriority="high"
                 />
               </div>
               <h3 className="text-[20px] font-mono">{card.title}</h3>
@@ -77,6 +80,7 @@ export const Collection = () => {
                   src={card.imageUrl5}
                   alt={card.title}
                   className="h-[30px]"
+                  fetchpriority="high"
                 />
                 <span className="text-[16px] opacity-80 font-math">
                   {card.name}
