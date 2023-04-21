@@ -384,7 +384,7 @@ export const Marketplace = () => {
                 </div>
               </div>
             ) : (
-              <p className="font-mono mb-[20px] text-[16px]">No results found for "{searchMessage1}"</p>
+              <p className="font-mono mb-[20px] text-[16px]">No results found for "{searchMessage1}"</p>        
             )}
           </div>
         </div>
